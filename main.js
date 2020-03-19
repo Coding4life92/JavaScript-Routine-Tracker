@@ -36,7 +36,7 @@ function removeItem(e) {
 function filterItem(e) {
     const text = e.target.value.toLowerCase();
     const items = itemList.getElementsByTagName('li');
-    Array.from(items).forEach(function(item) {
+    Array.from(items).forEach((item) => {
         let itemName = item.firstChild.textContent;
         if (itemName.toLowerCase().indexOf(text) != -1) {
             item.style.display = 'block';
