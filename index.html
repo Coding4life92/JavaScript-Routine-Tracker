@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Daily Routine</title>
+</head>
+<body>
+    <header id="main-header" class="bg-dark text-white p-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="header-title">Daily Routine</h1>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <input type="text" class="form-control" id="filter" placeholder="Search..." />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <div class="title">My Routine</div>
+            <form id="addForm" class="form-inline mb-3">
+                <input type="text" onfocus="this.value=''" class="form-control mr-2" id="item" />
+                <input type="submit" value="Submit" class="btn btn-dark" />
+            </form>
+            <h2 class="title">Routines</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Code in C++ <button class="btn btn-danger btn-md float-right delete">x</button></li>
+                <li class="list-group-item">Practice data structures <button class="btn btn-danger btn-md float-right delete">x</button></li>
+                <li class="list-group-item">Code in Python <button class="btn btn-danger btn-md float-right delete">x</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
